@@ -1,0 +1,53 @@
+@import "./index.scss";
+
+.section {
+  max-width: 594px;
+  margin: 2rem auto;
+  height: fit-content;
+  box-shadow: 0px 0px 16px hsl(0, 0%, 0%, 0.5);
+  &__header {
+    width: 100%;
+    padding: 8px;
+    font-weight: 900;
+    background-color: $bg-card-header;
+    border: 2px solid $text-primary;
+
+    .title {
+      font-weight: 700;
+    }
+  }
+
+  &__main {
+    width: 100%;
+    padding: 8px;
+    background-color: $bg-card-main;
+    border: 2px solid $text-primary;
+    border-top: none;
+    resize: vertical;
+  }
+}
+
+#preview pre {
+  background-color: #fff;
+}
+
+#preview blockquote p {
+  border-left: 4px solid black;
+  padding-left: 8px;
+}
+
+#preview table {
+  border-collapse: collapse;
+}
+
+#preview th,
+#preview td {
+  border: 2px solid black;
+}
+
+#preview p img {
+  //   position: absolute;
+  margin-top: 16px;
+  height: 100%;
+  width: 100%;
+}
